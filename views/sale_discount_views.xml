@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <!-- inherit view -->
+        <record model="ir.ui.view" id="discount_limit_form_view">
+            <field name="name">discount_limit_view</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//group[@name='sale_total']" position="inside">
+                    <field name="discount_total" invisible="True"/>
+                    <field name="cumulative_discount" invisible="True"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+
