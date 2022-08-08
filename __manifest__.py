@@ -1,7 +1,7 @@
 {
     'name': "Discount Limit",
 
-    'application': "True",
+    # 'application': "True",
 
     'sequence': "3",
 
