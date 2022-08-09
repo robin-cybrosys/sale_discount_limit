@@ -6,13 +6,10 @@
         <field name="priority" eval="10"/>
         <field name="inherit_id" ref="sale.res_config_settings_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//div[@id='discount_sale_order_lines']"
-                   position="inside">
+            <xpath expr="//div[@id='discount_sale_order_lines']" position="inside">
                 <div class="o_setting_right_pane">
-                    <div class="row mt16"
-                         title="Apply Minimum discount limit to sale orders per month">
-                        <label for="max_disc_limit"
-                               class="col-lg-4 o_light_label"/>
+                    <div class="row mt16" title="Apply Minimum discount limit to sale orders per month">
+                        <label for="max_disc_limit" class="col-lg-4 o_light_label"/>
                         <field name="max_disc_limit" class="oe_inline"/>
                     </div>
                 </div>
